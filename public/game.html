@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Turn-based Social RPG</title>
+  <!-- Personal CSS link-->
+  <link rel="stylesheet" type="text/css" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Bootstrap CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  
+    <div class="row stepRow">
+      <div class="col-6" id="characterAttributesSection">
+          <br>
+          <h3>Name:<span id="characterName"></span></h3>
+          <br>
+          <h3>Power:<span id="characterPower"></span></h3>
+          <br>
+          <h3>Knowledge:<span id="characterKnowledge"></span></h3>
+          <br>
+          <h3>Sanity:<span id="characterSanity"></span></h3>
+      </div>
+      <div class="col-6"><img class="stepImage" src="" alt="Golden Parachute"></div>
+      <div id="endingContainer">
+          <div class="row stepRow" id="ending1" style="display: none;">
+              <h1 id="done">Reputation!</h1>
+              <br>
+              <p>News of your departure from the tech firm spreads quickly.
+                Many Suitors line u to acquire you as an asset.
+                It suddenly dawns on you that the consultants must have really liked you
+                and maybe watched continued to watch you after the layoffs.
+                You later confirm this with your new company's hiring manager.
+                Looks like your reputation carried you through.</p>
+            </div>
+          
+            <div id="ending2" style="display: none;">
+              <h1 id="done">Criminal!</h1>
+              <br>
+              <p>You find yourself in Cabo, living it up.
+                Looks like the golden parachute was the right choice.
+                You racked up enough money with it to just live of the interest for a while.</p>
+            </div>
+          
+            <div id="ending3" style="display: none;">
+              <h1 id="done">Sanity!</h1>
+              <br>
+              <p>You may not have gotten accolades or a significant severance,
+                however, you have your sanity and your health.
+                For some reason, Tech firm is not eager to hire you, must have something to do about not standing out.
+                But you don't let that bring you Down.
+                With supreme Optimism and perseverance, you land a job with a new upstart company.
+              </p>
+            </div>
+          
+          <div id="ending4" style="display: none;">
+              <h1 id="done">
+                Knowledge!</h1>
+              <br>
+              <p>To the surprise of many, you landed new a job before the end year and with suffer now a loss in work.
+                You also moved your stock from your tech firm before the priced dropped.
+                All in all, you were overly prepared for this outcome.
+                Some people resent you for this, and maybe your reputation suffered a little bit.
+                But a least you don't have to find new work against the crowd of from you tech firm.</p>
+            </div>
+
+      </div>
+    </div>
+
+ <div class="container chosen-select" id="question1" style="display: block;">
+    <div class="row stepRow" > 
+      <div class="col-8">
+        You have worked for a tech firm for the last five years.
+        The Company recently hired two efficiency consultants to downsize the company.
+        You feel the heat as they cut the fat from your Department.
+      </div>
+      <div class="col-4">
+        <input name="Step1" type="radio" aria-label="Radio button for following text input" value="option1">
+        Do you embezzle money for a golden parachute?<br />
+        <input name="Step1" type="radio" aria-label="Radio button for following text input" value="option2">
+        Keep you head down and Redouble your efforts?<br />
+        <input name="Step1" type="radio" aria-label="Radio button for following text input" value="option3">
+        Do Nothing<br />
+        <button type="button" id="next1" class="btn btn-primary btn-lg btn-block">Next Turn</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container chosen-select" id="question2" style="display: none;">
+    <div class="row stepRow">
+      <div class="col-8">
+        You made it through the first round of cuts.
+        However, the consultants gear up for a second pass.
+        You are called in for an interview.
+        Suddenly, the subject changes to your name and how close it is to the famous Lounge Singer.
+        You worked hard to distance yourself from this person. Alas, here it is again.
+      </div>
+      <div class="col-4">
+        <input name="Step2" type="radio" aria-label="Radio button for following text input" value="option1">
+        Pretend your a fan and name the one song you know.<br />
+        <input name="Step2" type="radio" aria-label="Radio button for following text input" value="option2">
+        Reveal your contempt for the singer and people who make the comparison.<br />
+        <input name="Step2" type="radio" aria-label="Radio button for following text input" value="option3">
+        Do Nothing<br />
+        <button type="button" id="next2" class="btn btn-primary btn-lg btn-block">Next Turn</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container chosen-select" id="question3" style="display: none;">
+    <div class="row stepRow">
+      <div class="col-8">
+        Your deparment lead is moving your coworker into the basement.
+        He kindly ask your coworker to gather up his/her things.
+        Your coworker gently reminds him he still has their stapler.
+      </div>
+      <div class="col-4">
+        <input name="Step3" type="radio" aria-label="Radio button for following text input" value="option1">
+        Stand up for your coworker and offer your Stapler.<br />
+        <input name="Step3" type="radio" aria-label="Radio button for following text input" value="option2">
+        Let sleeping dogs lie<br />
+        <input name="Step3" type="radio" aria-label="Radio button for following text input" value="option3">
+        Do Nothing<br />
+        <button type="button" id="next3" class="btn btn-primary btn-lg btn-block">Next Turn</button>
+      </div>
+    </div>
+  </div>
+  <div class="container chosen-select" id="question4" style="display: none;">
+    <div class="row stepRow">
+      <div class="col-8">
+        Janice from accounting is having a birthday.
+        There is cake but not enough for everyone.
+        You are handed a piece of cake and are told to pass it down.
+        You hesitate and are called out for being greedy.
+      </div>
+      <div class="col-4">
+        <input name="Step4" type="radio" aria-label="Radio button for following text input" value="option1">
+        Pass the piece down knowing there not going to be one for you.<br />
+        <input name="Step4" type="radio" aria-label="Radio button for following text input" value="option2">
+        Cough on the cake, and claim victory.<br />
+        <input name="Step4" type="radio" aria-label="Radio button for following text input" value="option3">
+        Do Nothing<br />
+        <button type="button" id="next4" class="btn btn-primary btn-lg btn-block">Next Turn</button>
+      </div>
+    </div>
+  </div>
+  <div class="container chosen-select" id="question5" style="display: none;">
+    <div class="row stepRow">
+      <div class="col-8">
+        The Copier that has given you grief for the past 5 years has gone kaputt.
+      </div>
+      <div class="col-4">
+        <input name="Step5" type="radio" aria-label="Radio button for following text input" value="option1">
+        Viking Funeral<br />
+        <input name="Step5" type="radio" aria-label="Radio button for following text input" value="option2">
+        Rage against the machine<br />
+        <input name="Step5" type="radio" aria-label="Radio button for following text input" value="option3">
+        PC Load Letter?! Wwhat the *$%& does that mean?! Do Nothing<br />
+        <button type="button" id="next5" class="btn btn-primary btn-lg btn-block">Next Turn</button>
+      </div>
+    </div>
+  </div>
+  <div class="container chosen-select" id="question6" style="display: none;">
+    <div class="row stepRow">
+      <div class="col-8">
+        Your Department Lead would like you to print and place this quarters TPS reports.
+        You know that he can do this task himself. but, he throughly enjoys making you do his work.
+      </div>
+      <div class="col-4">
+        <input name="Step6" type="radio" aria-label="Radio button for following text input" value="option1">
+        Do you send an ALL-CAPS ANGRY EMAIL.<br />
+        <input name="Step6" type="radio" aria-label="Radio button for following text input" value="option2">
+        Copitulate and print out the reports.<br />
+        <input name="Step6" type="radio" aria-label="Radio button for following text input" value="option3">
+        Do Nothing<br />
+        <button type="button" id="next6" class="btn btn-primary btn-lg btn-block">Next Turn</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+  <script src="js/game.js"></script>
+
+</body>
+<script type="text/javascript">
+  var _userway_config = {
+    /* uncomment the following line to override default position*/
+    position: '3',
+    /* uncomment the following line to override default size (values: small, large)*/
+    size: 'large',
+    /* uncomment the following line to override default language (e.g., fr, de, es, he, nl, etc.)*/
+    language: null,
+    /* uncomment the following line to override color set via widget (e.g., #053f67)*/
+    color: 'null',
+    /* uncomment the following line to override type set via widget(1=person, 2=chair, 3=eye)*/
+    type: '3',
+    account: 'kvRlcGK4ep'
+  };
+
+</script>
+<script type="text/javascript" src="https://cdn.userway.org/widget.js"></script>
+
+</html>

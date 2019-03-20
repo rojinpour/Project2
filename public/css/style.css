@@ -1,0 +1,84 @@
+html, body, main, .row {
+    height: 100%;
+    width: 100%;
+    text-shadow: black;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card-body {
+    background-color: whitesmoke;
+}
+
+label {
+    color: black;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace; 
+}
+
+.container {
+    
+    padding: 20px;
+}
+
+h2 {
+    font-size: 42px !important;
+}
+
+p {
+    font-size: 20px !important;
+}
+
+body {
+    background-image: url("../images/paper.jpg");
+    background-repeat: repeat-x;
+}
+
+.card-header {
+    color: white;
+    text-shadow: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-style: bold;
+    background-color: rgb(68, 64, 64) !important;
+}
+
+.cardForm {
+    margin: 25px 50px 75px 100px;
+    opacity: 0.9;
+  filter: alpha(opacity=50);
+  width: 500px;
+  background-color: white;
+  display: inline-block;
+}
+
+.form-control {
+    text-align: center;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.stepRow {
+    background-color: white;
+    margin: 20px 50px 250px 100px;
+    padding: 10px;
+    opacity: 0.9;
+    filter: alpha(opacity=50);
+    width: 900px;
+    height: auto;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.stepImage {
+    height: 320px;
+    width: auto;
+}
+
+h3 {
+    text-align: left;
+    font-size: 30px !important;
+}
